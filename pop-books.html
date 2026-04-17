@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/home.js" defer></script>
+    <script src="js/book-library.mjs" type="module"></script>
 </head>
 
 <body>
@@ -25,13 +25,19 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="pop-books.html">Popular Books</a></li>
                 <li><a href="search.html">Search</a></li>
-                <li><a href="event.html">Events</a></li>
+                <li><a href="music.html">Music</a></li>
                 <li><a href="book-form.html">Add a Book</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h2>Popular Books</h2>
+        <div class="library-buttons">
+            <button id="all-books">All Books</button>
+            <button id="fantasy-sort">Fantasy</button>
+            <button id="dystopian-sort">Dystopian</button>
+            <button id="romance-sort">Romance</button>
+        </div>
         <section id="bookList">
             
         </section>

@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/home.js" defer></script>
+    <script src="js/addBook.js" defer></script>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="pop-books.html">Popular Books</a></li>
                 <li><a href="search.html">Search</a></li>
-                <li><a href="event.html">Events</a></li>
+                <li><a href="music.html">Music</a></li>
                 <li><a href="book-form.html">Add a Book</a></li>
             </ul>
         </nav>
@@ -35,9 +35,16 @@
         <div id="spotlight">
 
         </div>
-        <form>
+        <form id="addBook">
+            <label for="authorName">Author Name <input type="text" id="authorName" name="authorName" required title="Please enter author name."> </label>
+            <label for="bookTitle">Book Title <input type="text" id="bookTitle" name="bookTitle" required title="Please enter book title."> </label>
+            <label for="bookGenre">Book Genre <input type="text" id="bookGenre" name="bookGenre" required title="Please enter your book genre."> </label>
+            <label for="bookImage">Cover Image Link <input type="text" id="bookImage" name="bookImage" required title="Please enter a link to the cover image."> </label>
+            <label for="bookDescription">Short Description <textarea id="bookDescription" rows="4" cols="30" required placeholder="Please enter your favorite author."></textarea> </label>
             
+            <input type="submit" id="submit-button" name="submit-button" value="Add Book Spotlight">
         </form>
+        <p>Once you submit it, you can view your spotlight on this page.</p>
     </main>
     <footer id="page-footer">&copy;2026 WDD 330 | Your Next Find</footer>
 </body>

@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/home.js" defer></script>
+    <script src="js/music.js" type="module"></script>
 </head>
 
 <body>
@@ -25,14 +25,21 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="pop-books.html">Popular Books</a></li>
                 <li><a href="search.html">Search</a></li>
-                <li><a href="event.html">Events</a></li>
+                <li><a href="music.html">Music</a></li>
                 <li><a href="book-form.html">Add a Book</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Events</h2>
+        <h2>Music</h2>
+        <form id="musicForm">
+            <label for="musicSearch">Find a Playlist:</label>
+            <input type="text" id="musicSearch" name="musicSearch">
+            <p>Type in a genre or topic for a playlist and press enter to find music to listen to while you read.</p>
+        </form>
+        <section id="musicResults">
 
+        </section>
     </main>
     <footer id="page-footer">&copy;2026 WDD 330 | Your Next Find</footer>
 </body>

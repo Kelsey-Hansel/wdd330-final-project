@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Next Find | Home</title>
+    <title>Your Next Find | Search</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/home.js" defer></script>
+    <script src="js/search.js" defer></script>
 </head>
 
 <body>
@@ -25,17 +25,23 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="pop-books.html">Popular Books</a></li>
                 <li><a href="search.html">Search</a></li>
-                <li><a href="event.html">Events</a></li>
+                <li><a href="music.html">Music</a></li>
                 <li><a href="book-form.html">Add a Book</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h2>Search</h2>
-        <div id="spotlight">
+        <form id="searchLibrary">
+            <label for="searchBook">Book Search:</label>
+            <input type="text" id="searchBook" name="searchBook">
+            <label for="searchAuthor">Author Search:</label>
+            <input type="text" id="searchAuthor" name="searchAuthor">
+            <p>Please type in the appropriate search bar and press enter to view results.</p>
+        </form>
+        <section id="displayResults">
 
-        </div>
-
+        </section>
     </main>
     <footer id="page-footer">&copy;2026 WDD 330 | Your Next Find</footer>
 </body>

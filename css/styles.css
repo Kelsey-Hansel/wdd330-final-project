@@ -4,9 +4,12 @@
     --accent-color: rgb(26, 84, 194);
     font-family: "Courier Prime", monospace;
     font-style: normal;
+    margin: 0;
+    padding: 0;
 }
 
 header, footer {
+    margin: 0;
     background-color: var(--primary-color);
     color: white;
     padding: 15px;
@@ -52,16 +55,166 @@ body {
     background-color: var(--secondary-color);
 }
 
-#spotlight {
-    background-color: var(--accent-color);
-    color: white;
-    padding: 10px;
-    border: var(--accent-color) solid 1px;
-    border-radius: 10px;
+main {
+    padding: 5px;
 }
 
-#homeHighlights li {
-    list-style: none;
-    padding: 5px;
+main h2 {
+    padding: 15px;
+}
+
+#homeHighlights {
+    margin: 0;
+    padding: 10px;
+
+    h3 {
+        padding: 10px;
+    }
+
+    li {
+        list-style: none;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.book-card {
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: white;
     text-align: center;
+}
+
+.book-card, #displayResults ul {
+    margin: 1rem;
+    border-radius: 10px;
+    border: 1px solid gray;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+    "cover"
+    "title"
+    "author"
+    "genre"
+    "description";
+
+    h3 {
+        grid-area: title;
+        padding: 10px;
+    }
+    
+    img {
+        grid-area: cover;
+        width: 200px;
+        padding: 10px;
+        justify-self: center;
+    }   
+    
+    li {
+        list-style: none;
+    }
+}
+
+.genre {
+    grid-area: genre;
+    padding: 10px;
+}
+
+.author {
+    grid-area: author;
+    padding: 10px;
+}
+
+.description {
+    grid-area: description;
+    padding: 10px;
+    font-size: small;
+}
+
+#searchLibrary {
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+}
+
+.library-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 10px;
+}
+
+#musicResults {
+    padding: 15px;
+    display: grid;
+    gap: 1rem;
+
+    ul {
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid gray;
+    }
+
+    li {
+        list-style: none;
+        padding: 5px;
+    }
+}
+
+#addBook {
+    display: grid;
+    gap: 1rem;
+    padding: 10px;
+}
+
+
+@media screen and (min-width: 600px) {
+    
+    .homePage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+
+        h2 {
+            grid-column: 1 / 3;
+        }
+    }
+
+    #homeHighlights li {
+        text-align: left;
+    }
+
+    #spotlight {
+        display: grid;
+    }
+    
+    .book-card, #displayResults ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "cover title"
+        "cover author"
+        "cover genre"
+        "cover description";
+        
+        img {
+            align-self: center;
+            width: 100%;
+        }
+    }
+
+    #displayResults img {
+        max-width: 150px;
+    }
+
+    #bookList, #musicResults, #addBook {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #submit-button {
+        grid-column: 1 / 3;
+        width: 300px;
+        justify-self: center;
+    }
 }
