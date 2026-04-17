@@ -25,6 +25,7 @@ const button = document.getElementById("submit-button");
 function displaySpotlight(book) {
 
     const cardContainer = document.querySelector("#spotlight");
+    cardContainer.innerHTML = "";
 
     let card = document.createElement("div");
     let title = document.createElement("h3");
