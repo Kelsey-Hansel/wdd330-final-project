@@ -1,6 +1,6 @@
 // Populate the book and author recommendations 
 async function getData() {
-    const response = await fetch("../data/readers.json");
+    const response = await fetch("./../data/readers.json");
     const data = await response.json();
     return data.readers;
 }
