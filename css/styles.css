@@ -207,7 +207,7 @@ main h2 {
         max-width: 150px;
     }
 
-    #bookList, #musicResults, #addBook {
+    #bookList, #displayResults, #musicResults, #addBook {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
