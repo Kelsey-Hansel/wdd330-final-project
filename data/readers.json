@@ -1,0 +1,28 @@
+{
+    "readers": [
+        {
+            "title": "The Book Thief",
+            "author": "Markus Zusak",
+            "genre": "Thrillers",
+            "coverImage": "images/book-thief.jpg"
+        },
+        {
+            "title": "Once Upon A Broken Heart",
+            "author": "Stephanie Garber",
+            "genre": "Romance",
+            "coverImage": "images/once-upon-broken-heart.jpg"
+        },
+        {
+            "title": "Aurora Rising",
+            "author": "Amie Kaufman",
+            "genre": "Fantasy",
+            "coverImage": "images/aurora-rising.jpg"
+        },
+        {
+            "title": "Dungeons and Drama",
+            "author": "Kristy Boyce",
+            "genre": "Mystery",
+            "coverImage": "images/dungeons-and-drama.jpg"
+        }
+    ]
+}

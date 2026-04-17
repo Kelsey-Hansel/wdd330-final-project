@@ -59,3 +59,9 @@ body {
     border: var(--accent-color) solid 1px;
     border-radius: 10px;
 }
+
+#homeHighlights li {
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+}
